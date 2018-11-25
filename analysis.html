@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>How we analyze</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+  
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="css/semantic.min.js"></script>
+  <script src="js/promise-polyfill/promise.js"></script>
+  <script src="js/RichMarker_min.js"></script>
+  <script src="data.json"></script>
+  <script src="js/mvc.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- echart -->
+  <script src="echarts/dist/echarts.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body style="background-color:#f0f0f0 ;"> 
+<!-- header -->
+<nav class="nav" style="background-color: black; width:100%;height: 60px; position: fixed; z-index: 1000;top:0px; ">
+   <div class="container">
+    <div class="logo" style="font-size: 12px;color: #ffc21f;padding-top: 9px">
+      <h1>Team D</h1>
+    </div>
+   </div>
+</nav>
+
+
+<!--banner -->
+<div class="jumbotron text-center " style="background-color: #ffc21f; width: 100%; height: 400px;padding-top:0px;margin-top: 60px;">
+  <div class="container" style="padding-top:80px">
+  <h1>OUR ANALYSIS REPORT</h1>
+  <br>
+  <h3>We pick up some interesting analysis about the relationship between features and safety level.</h3>
+  </div>
+</div>
+
+<!--content -->
+<div class="content">
+  <div class="container">
+
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       <h3 class="panel-title">Are the more expensive cars safer?</h3>
+     </div>
+     <div class="panel-body" style="padding-top: 60px;padding-bottom: 60px">
+        <div class="row">
+          <div class="col-xs-6">
+            <img src="images/figure1.png" style="width: 500px;height: auto"></img>
+          </div>
+          <div class="col-xs-6" style="padding-top: 20px">
+            <p>People usually think that the more expensive cars are safer. There is some basis for this widely accepted statement, since the more expensive cars have larger sizes, and are equipped with some more advanced passive and active security configurations like airbag, seat belt, anti-locking braking system (ABS) and electronic stability program (ESP). The differences in safety levels brought by the price are especially obvious when the cars are cheaper than $50,000. With the price rising, the safety of various car series improved significantly. However, when the car price exceeds $50,000, there is not much room for continuous safety improvement.
+            </p>
+            <p>From Figure 1, it is easy to see that most of the car series gather together in the top left corner, which means most of the car manufacturers are trying to control the selling price in a competitive range while enhancing the safety of the vehicles themselves. The car series in this cluster are cost-effective choices which have both high quality and reasonable price.
+</p>
+          </div>
+        </div>
+     </div>
+   </div>
+
+
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       <h3 class="panel-title">Which one is safer, SUVs vs Cars</h3>
+     </div>
+     <div class="panel-body" style="padding-top: 20px;padding-bottom: 20px">
+     <div class="col-xs-6" >
+            <img src="images/figure3.jpeg" style="width: 500px;height: auto"></img>
+          </div>
+          <div class="col-xs-6" style="padding-top: 40px">
+            <p>In today's market, the SUV is very popular, because many consumers think that SUVs are safer than Cars. However, in fact, it can be easily seen from the data that the safety performance of SUV and Car is almost the same. In the same price range, the safety of SUV is not necessarily better than that of Car. Although SUVs have higher chassis and are heavier, but these are the advantages that SUVs can take in multi-car collisions. If the car itself hit a stationary object or be side impact, the damage to the SUV is rather high, and in this case SUVs might not be as safe as cars.
+
+
+            </p>
+          </div>
+     </div>
+   </div>
+
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       <h3 class="panel-title">Which one is safer, Sedans vs Hatchbacks.</h3>
+     </div>
+     <div class="panel-body" style="padding-top: 20px;padding-bottom: 20px">
+     <div class="col-xs-6" >
+            <img src="images/figure2.png" style="width: 500px;height: auto"></img>
+          </div>
+          <div class="col-xs-6" style="padding-top: 40px">
+<p>Overall, the safety of the sedan and hatchback does not differ a lot, the sedan will not gain extra safety since it has a truck. It is shown in the Figure 3 that hatchbacks are generally cheaper and great value for money.
+</p>
+          </div>
+     </div>
+   </div>
+
+<div class="panel panel-default">
+     <div class="panel-heading">
+       <h3 class="panel-title">Are the heavier cars safer?</h3>
+     </div>
+     <div class="panel-body" style="padding-top: 20px;padding-bottom: 20px">
+     <div class="col-xs-6" >
+            <img src="images/figure4.jpeg" style="width: 500px;height: auto"></img>
+          </div>
+          <div class="col-xs-6" style="padding-top: 40px">
+            <p>IMany people may think that the heavier the vehicles the safer, but that’s not the case. As can be seen from the data, most vehicles weigh between 2,500 lbs. and 5,000 lbs., and the majority of these vehicles have high positions in safety level, with only a handful of them not being safe enough. Although vehicles weighing more than 5000lbs are generally not low in safety level, their overall safety is not as high as the lighter ones, so the vehicle's safety is not positively correlated with the weight.
+
+            </p>
+          </div>
+     </div>
+   </div>
+
+   <div class="panel panel-default">
+     <div class="panel-heading">
+       <h3 class="panel-title">How we compute the safety score of each car series?
+</h3>
+     </div>
+     <div class="panel-body" style="padding-top: 20px;padding-bottom: 20px">
+     <div class="col-xs-12" >
+            <P>At present, there is no accepted guideline on how to evaluate the safety of a car. In this application, we chose to combine the experimental crash test data from NCAP with real statistics such as car crash data from a large car accident dataset to obtain a safe score. We consider four factors for each car series: the adult occupant protection score obtained by NCAP crash test, the safety rating of the car based on experience by experts (from CarConnection.com), the number of occurrence of car accidents in previous years and the proportion of car occupants who died after a car accident. The correlations between these four variables are very weak, so they can be seen as four independent variables. We format all four factors into the same scale from 0 to 10, and then calculate the final safety score for each car series, each factor accounts for 25%.</P>
+          </div>
+          
+     </div>
+   </div>
+
+
+
+
+
+   
+
+  </div>
+</div>
+
+
+<!--footer -->
+<div class="footer" style="background-color: black;; width: 100%; min-height: 200px;height: auto">
+   <div class="container" style="padding-top:20px">
+    
+    <div class="row" style="color: #777; font-style: italic;">
+       <div class="col-md-2">
+        <div class="logo" style="padding-top: 45px; color: #ffc21f">
+           <h2>Team D :</h1>
+            <p>10/01/2018</p>
+        </div>
+       </div>
+       <div class="col-md-2" style="padding-top: 40px">
+         <h4 style="color:white">ZIDA LI</h4>
+         <p>29743397</p>
+         <p>zl4y17@soton.ac.uk</p>
+       </div>
+       <div class="col-md-2" style="padding-top: 40px">
+         <h4 style="color:white">YUAN LOU</h4>
+         <p>29363373</p>
+         <p>yl2m17@soton.ac.uk</p>
+       </div>
+       <div class="col-md-2" style="padding-top: 40px">
+         <h4 style="color:white">YUNHONG LIU</h4>
+         <p>29079497</p>
+         <p>yl2y17@soton.ac.uk</p>
+       </div>
+       <div class="col-md-2" style="padding-top: 40px">
+         <h4 style="color:white">YINGYI ZHANG</h4>
+         <p>29393159</p>
+         <p>yz11u17@soton.ac.uk </p>
+       </div>
+       <div class="col-md-2" style="padding-top: 40px">
+         <h4 style="color:white">JUANPENG HE</h3>
+         <p>29615461</p>
+         <p>jh1a17@soton.ac.uk</p>
+       </div>
+    </div>
+
+   </div>
+</div>
+
+
+</body>
+<!-- js code -->
+<script type="text/javascript">
+
+$('.carousel').carousel()
+
+
+</script>
+
+</body>
+</html>
